@@ -15,7 +15,6 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-config" content="https://blog.wolfhead.tv/wp-content/themes/wolfhead/assets/icons/browserconfig.xml">
     <meta name="theme-color" content="#ef562f">
-    <link rel="stylesheet" href="https://wolfhead.tv/wp-content/cache/minify/aa928.css" media="all">
     <style type="text/css">
         body,
         html {
@@ -176,7 +175,8 @@
         </div>
     </main>
     <script>
-	var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+	var now  = new Date(),
+	    days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
 	     day = days[now.getDay()];
 	document.getElementById('day').textContent = day;
     </script>
