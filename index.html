@@ -147,7 +147,7 @@
         <div id="content">
             <p>I'm <strong>David Coleman</strong>. I am an aspiring artist, photographer and van-dweller currently applying for the Community College in Austin, TX.</p>
             <p>I currently run Wolfhead Studios, my blog about van life, art, photography, etc.</p>
-            <p>Hope you're having a good Friday.</p>
+	    <p>Hope you're having a good <span id="day"></span>.</p>
             <ul id="links">
                 <li>
                     <a class="icon" href="https://facebook.com/wolfhead.tv" target="_blank">
@@ -175,5 +175,10 @@
             </ul>
         </div>
     </main>
+    <script>
+	var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+	     day = days[now.getDay()];
+	document.getElementById('day').textContent = day;
+    </script>
 </body>
 </html>
